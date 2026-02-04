@@ -1446,6 +1446,115 @@
   color: #fff;
 }
 
+/* ================= MOBILE PRODUCT CARD (<=1120px) ================= */
+@media (max-width: 1120px) {
+
+  .section_top_rating_products_actions {
+    display: none;
+  }
+
+  .section_top_rating_products_mobile_cart {
+    display: flex;
+  }
+}
+
+.section_top_rating_products_mobile_cart {
+  display: none;
+  margin-top: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qty-box {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.qty-btn {
+  background: none;
+  border: none;
+  padding: 6px 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qty-value {
+  padding: 0 6px;
+  font-size: 16px;
+}
+
+.mobile-add-to-cart {
+  width: 207px;
+  height: 38px;
+  border: 1px solid #000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+  .section_top_rating_products_actions {
+    display: none !important;
+  }
+
+  .section_top_rating_products_mobile_cart {
+    display: flex;
+  }
+
+  .section_top_rating_products_card:hover .product_img_main {
+    opacity: 1;
+  }
+
+  .section_top_rating_products_card:hover .product_img_hover {
+    opacity: 0;
+  }
+}
+
+/* ================= FORCE SHOW HEART & SEARCH (NO HOVER) ================= */
+@media (max-width: 1025px) {
+
+  .section_top_rating_products_actions {
+    display: flex !important;
+  }
+
+  .section_top_rating_products_action {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  .section_top_rating_products_action:nth-child(1) {
+    display: none !important;
+  }
+
+  .section_top_rating_products_action:nth-child(3) {
+    display: none !important;
+  }
+
+  .section_top_rating_products_action:nth-child(2),
+  .section_top_rating_products_action:nth-child(4) {
+    display: flex !important;
+  }
+
+  .section_top_rating_products_action button {
+  width: 40px;
+  height: 40px;
+  border-radius: 0% !important;
+  border: none;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+}
+
 /* ================================== section name_testimonial ================================== */
 .section_testimonial {
   padding: 80px 0;
