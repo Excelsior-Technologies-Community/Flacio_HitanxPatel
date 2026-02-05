@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="demo.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -699,184 +699,213 @@
         </div>
     </section>
 
-    <!-- ================== section name_products-listing ================== -->
+    <!-- ================= section name_products-listing ================= -->
     <section class="section_products-listing">
-        <div class="container-fluid">
-            <div class="row">
+    <div class="container-fluid">
+        <div class="row">
 
-            <!-- LEFT FILTER SIDEBAR -->
-            <div class="col-lg-3 section_products-listing__sidebar">
+        <!-- FILTER SIDEBAR -->
+        <!-- ================= ASIDE ================= -->
+        <aside class="col-lg-3 section_products-listing__sidebar">
 
-                <div class="filter-block">
-                    <button class="filter-header"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#filterCollections">
-                        Collections
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
+        <div class="accordion" id="productFilterAccordion">
 
-                    <div class="collapse show" id="filterCollections">
-                        <ul class="filter-list">
-                            <li>
-                                Air Purifying
-                                <span class="filter-count">6</span>
-                            </li>
-                            <li>
-                                Ceramic Pots
-                                <span class="filter-count">9</span>
-                            </li>
-                            <li>
-                                Herb Seeds
-                                <span class="filter-count">6</span>
-                            </li>
-                            <li>
-                                Indoor Plants
-                                <span class="filter-count">5</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="filter-block">
-                    <button class="filter-header"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#filterAvailability">
-                        Availability
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-
-                    <div class="collapse show" id="filterAvailability">
-                        <label class="filter-checkbox">
-                            <div class="filter-left">
-                                <input type="checkbox">
-                                <span>In stock</span>
-                            </div>
-
-                            <span class="filter-count">9</span>
-                        </label>
-
-                        <label class="filter-checkbox">
-                            <div class="filter-left">
-                                <input type="checkbox">
-                                <span>Out of stock</span>
-                            </div>
-
-                            <span class="filter-count">1</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="filter-block">
-                    <button class="filter-header"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#filterPrice">
-                        Price
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-
-                    <div class="collapse show" id="filterPrice">
-                        <input type="range" class="form-range">
-                        <p class="price-text">
-                            <span class="price-label">Price:</span>
-                            <span class="price-value">$0.00 — $153.00</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="filter-block">
-                    <button class="filter-header"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#filterSize">
-                        Size
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-
-                    <div class="collapse show" id="filterSize">
-                        <div class="size-list">
-                            <label class="size-pill">
-                                <span>30cm</span>
-                                <em class="size-count">1</em>
-                            </label>
-
-                            <label class="size-pill">
-                                <span>50cm</span>
-                                <em class="size-count">1</em>
-                            </label>
-
-                            <label class="size-pill">
-                                <span>60cm</span>
-                                <em class="size-count">1</em>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Color Filter -->
-                <div class="filter-block">
-                <button class="filter-header"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#filterColor">
-                    Color
-                    <i class="bi bi-chevron-down"></i>
+            <!-- ================= COLLECTIONS ================= -->
+            <div class="accordion-item section_products-listing__sidebar-collections">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collections">
+                Collections
                 </button>
+            </h2>
+            <div id="collections" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                <ul class="list-unstyled sidebar-list">
+                    <li>Air Purifying <span>6</span></li>
+                    <li>Ceramic Pots <span>9</span></li>
+                    <li>Herb Seeds <span>6</span></li>
+                    <li>Indoor Plants <span>5</span></li>
+                </ul>
+                </div>
+            </div>
+            </div>
 
-                <div class="collapse show" id="filterColor">
-
-                    <label class="filter-checkbox">
-                    <div class="filter-left">
-                        <span class="color-dot black"></span>
-                        <span>Black</span>
-                    </div>
-                    <span class="filter-count">5</span>
-                    </label>
-
-                    <label class="filter-checkbox">
-                    <div class="filter-left">
-                        <span class="color-dot blue"></span>
-                        <span>Blue</span>
-                    </div>
-                    <span class="filter-count">3</span>
-                    </label>
-
-                    <label class="filter-checkbox">
-                    <div class="filter-left">
-                        <img src="image/floral.jpg" class="color-img">
-                        <span>Floral</span>
-                    </div>
-                    <span class="filter-count">2</span>
-                    </label>
-
-                    <label class="filter-checkbox">
-                    <div class="filter-left">
-                        <img src="image/geo.jpg" class="color-img">
-                        <span>Geometric</span>
-                    </div>
-                    <span class="filter-count">1</span>
-                    </label>
-
-                    <label class="filter-checkbox">
-                    <div class="filter-left">
-                        <span class="color-dot grey"></span>
-                        <span>Grey</span>
-                    </div>
-                    <span class="filter-count">1</span>
-                    </label>
-
-                    <div class="view-more">+ View more</div>
+            <!-- ================= AVAILABILITY ================= -->
+            <div class="accordion-item section_products-listing__sidebar-availability">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#availability">
+                Availability
+                </button>
+            </h2>
+            <div id="availability" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">In stock <span class="count">9</span></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Out of stock <span class="count">1</span></label>
                 </div>
                 </div>
-
+            </div>
             </div>
 
-            <!-- RIGHT PRODUCTS -->
-            <div class="col-lg-9">
-                <!-- products here -->
+            <!-- ================= PRICE ================= -->
+            <div class="accordion-item section_products-listing__sidebar-price">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#price">
+                Price
+                </button>
+            </h2>
+            <div id="price" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                <input type="range" class="form-range">
+                <p class="small text-muted mt-2">Price: $0.00 — $153.00</p>
+                </div>
+            </div>
             </div>
 
+            <!-- ================= SIZE ================= -->
+            <div class="accordion-item section_products-listing__sidebar-size">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#size">
+                Size
+                </button>
+            </h2>
+            <div id="size" class="accordion-collapse collapse">
+                <div class="accordion-body d-flex flex-wrap gap-2">
+                <button class="btn btn-outline-secondary rounded-pill">30cm</button>
+                <button class="btn btn-outline-secondary rounded-pill">50cm</button>
+                <button class="btn btn-outline-secondary rounded-pill">60cm</button>
+                </div>
             </div>
+            </div>
+
+            <!-- ================= COLOR ================= -->
+            <div class="accordion-item section_products-listing__sidebar-color">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#color">
+                Color
+                </button>
+            </h2>
+            <div id="color" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                <ul class="list-unstyled sidebar-color-list">
+                    <li><span class="dot bg-dark"></span> Black <span class="count">5</span></li>
+                    <li><span class="dot bg-primary"></span> Blue <span class="count">3</span></li>
+                    <li><span class="dot bg-secondary"></span> Grey <span class="count">1</span></li>
+                </ul>
+                <a href="#" class="view-more">+ View more</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- ================= FEATURE PRODUCT ================= -->
+            <div class="accordion-item section_products-listing__sidebar-feature">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#feature">
+                Feature Product
+                </button>
+            </h2>
+            <div id="feature" class="accordion-collapse collapse">
+                <div class="accordion-body">
+
+                <div class="feature-product">
+                    <img src="image/tiger-aloe.jpg">
+                    <div>
+                    <div class="stars">★★★★★</div>
+                    <h6>Tiger Aloe</h6>
+                    <p>$150.00</p>
+                    </div>
+                </div>
+
+                <div class="feature-product">
+                    <img src="image/ruby-tree.jpg">
+                    <div>
+                    <div class="stars">★★★★★</div>
+                    <h6>Ruby Rubber Tree</h6>
+                    <p><del>$90.00</del> $51.00</p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </div>
+
         </div>
-    </section>
 
+        </aside>
+
+        <!-- PRODUCTS GRID -->
+        <div class="col-lg-9">
+
+            <!-- TOP BAR -->
+            <div class="products-topbar d-flex justify-content-between align-items-center mb-4">
+            <p class="mb-0">You've viewed 9 of 10 products</p>
+            <select class="form-select w-auto">
+                <option>Alphabetically, A–Z</option>
+                <option>Price, low to high</option>
+                <option>Price, high to low</option>
+            </select>
+            </div>
+
+            <!-- PRODUCT GRID -->
+            <div class="row g-4">
+
+            <!-- PRODUCT CARD -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                <div class="product-img">
+                    <span class="sale-badge">-28%</span>
+                    <img src="image/product1.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <h6>Jade Succulent</h6>
+                    <p class="price">$50.00</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                <div class="product-img">
+                    <img src="image/product2.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <h6>Palm</h6>
+                    <p class="price">$50.00</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                <div class="product-img">
+                    <span class="out-stock">Out of stock</span>
+                    <img src="image/product3.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <h6>Pink Dragon Tree</h6>
+                    <p class="price"><del>$100.00</del> $80.00</p>
+                </div>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="pagination-wrapper text-center mt-5">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">→</button>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
