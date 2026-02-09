@@ -704,6 +704,238 @@
         <div class="container-fluid">
             <div class="row">
 
+                <!-- Filter toggle (only <1200px) -->
+                <button class="filter-toggle d-lg-none"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#filtersOffcanvas">
+                    <i class="bi bi-sliders"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-start"
+                    tabindex="-1"
+                    id="filtersOffcanvas">
+
+                    <div class="offcanvas-header">
+                        <h5>Filters</h5>
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="filter-block">
+                            <button class="filter-header"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#filterCollections">
+                                Collections
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                            <div class="collapse show" id="filterCollections">
+                                <ul class="filter-list">
+                                    <li>
+                                        Air Purifying
+                                        <span class="filter-count">6</span>
+                                    </li>
+                                    <li>
+                                        Ceramic Pots
+                                        <span class="filter-count">9</span>
+                                    </li>
+                                    <li>
+                                        Herb Seeds
+                                        <span class="filter-count">6</span>
+                                    </li>
+                                    <li>
+                                        Indoor Plants
+                                        <span class="filter-count">5</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="filter-block">
+                            <button class="filter-header"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#filterAvailability">
+                                Availability
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                            <div class="collapse show" id="filterAvailability">
+                                <label class="filter-checkbox">
+                                    <div class="filter-left">
+                                        <input type="checkbox">
+                                        <span>In stock</span>
+                                    </div>
+
+                                    <span class="filter-count">9</span>
+                                </label>
+
+                                <label class="filter-checkbox">
+                                    <div class="filter-left">
+                                        <input type="checkbox">
+                                        <span>Out of stock</span>
+                                    </div>
+
+                                    <span class="filter-count">1</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-block">
+                            <button class="filter-header"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#filterPrice">
+                                Price
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                            <div class="collapse show" id="filterPrice">
+                                <input type="range" class="form-range">
+                                <p class="price-text">
+                                    <span class="price-label">Price:</span>
+                                    <span class="price-value">$0.00 — $153.00</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="filter-block">
+                            <button class="filter-header"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#filterSize">
+                                Size
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                            <div class="collapse show" id="filterSize">
+                                <div class="size-list">
+                                    <label class="size-pill">
+                                        <span>30cm</span>
+                                        <em class="size-count">1</em>
+                                    </label>
+
+                                    <label class="size-pill">
+                                        <span>50cm</span>
+                                        <em class="size-count">1</em>
+                                    </label>
+
+                                    <label class="size-pill">
+                                        <span>60cm</span>
+                                        <em class="size-count">1</em>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-block">
+                        <button class="filter-header"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#filterColor">
+                            Color
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+
+                        <div class="collapse show" id="filterColor">
+
+                            <label class="filter-checkbox">
+                                <div class="filter-left">
+                                    <span class="color-dot black"></span>
+                                    <span>Black</span>
+                                </div>
+                                <span class="filter-count">5</span>
+                            </label>
+
+                            <label class="filter-checkbox">
+                                <div class="filter-left">
+                                    <span class="color-dot blue"></span>
+                                    <span>Blue</span>
+                                </div>
+                                <span class="filter-count">3</span>
+                            </label>
+
+                            <label class="filter-checkbox">
+                                <div class="filter-left">
+                                    <span class="color-dot blue"></span>
+                                    <span>Floral</span>
+                                </div>
+                                <span class="filter-count">2</span>
+                            </label>
+
+                            <label class="filter-checkbox">
+                                <div class="filter-left">
+                                    <span class="color-dot blue"></span>
+                                    <span>Geometric</span>
+                                </div>
+                                <span class="filter-count">1</span>
+                            </label>
+
+                            <label class="filter-checkbox">
+                                <div class="filter-left">
+                                    <span class="color-dot grey"></span>
+                                    <span>Grey</span>
+                                </div>
+                                <span class="filter-count">1</span>
+                            </label>
+
+                            <div class="view-more">+ View more</div>
+                        </div>
+                        </div>
+
+                        <div class="filter-block">
+                            <button class="filter-header"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#filterFeatureProduct">
+                                Feature Product
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                            <div class="collapse show" id="filterFeatureProduct">
+
+                                <div class="feature-product-item">
+                                    <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/10-9_180x.jpg?v=1727684850" alt="Tiger Aloe">
+
+                                    <div class="feature-product-info">
+                                        <div class="feature-rating">
+                                        ★★★★★
+                                        </div>
+                                        <h6>Tiger Aloe</h6>
+                                        <p class="price">$150.00</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-product-item">
+                                    <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/14-3_180x.jpg?v=1727684845" alt="The Beginner Set">
+
+                                    <div class="feature-product-info">
+                                        <div class="feature-rating">
+                                        ★★★★★
+                                        </div>
+                                        <h6>The Beginner Set</h6>
+                                        <p class="price">$130.00</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-product-item">
+                                    <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/10-6_180x.jpg?v=1727684836" alt="Ruby Rubber Tree">
+
+                                    <div class="feature-product-info">
+                                        <div class="feature-rating">
+                                        ★★★★★
+                                        </div>
+                                        <h6>Ruby Rubber Tree</h6>
+                                        <p class="price">
+                                            <span class="old-price">$90.00</span>
+                                            <span class="new-price">$51.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
                 <!-- LEFT FILTER SIDEBAR -->
                 <div class="col-lg-3 section_products-listing__sidebar">
 
@@ -1167,18 +1399,8 @@
                                     </div>
                                 </div>
 
-                                <div class="section_top_rating_products_mobile_cart">
-
-                                    <div class="qty-box">
-                                        <button class="qty-btn">-</button>
-                                        <span class="qty-value">1</span>
-                                        <button class="qty-btn">+</button>
-                                    </div>
-
-                                    <button class="mobile-add-to-cart">
-                                        <i class="bi bi-bag"></i>
-                                    </button>
-
+                                <div class="section_top_rating_products_view">
+                                    <a href="#" class="view-product-btn">VIEW PRODUCT</a>
                                 </div>
 
                             </div>
@@ -1343,7 +1565,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6">
-                            <div class="section_top_rating_products_card">
+                            <div class="section_top_rating_products_card out-of-stock">
 
                                 <div class="section_top_rating_products_image">
                                     <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/8_540x.jpg?v=1727684830" class="product_img product_img_main" alt="">
@@ -1673,6 +1895,252 @@
         </div>
     </section>
 
+    <!-- section name_footer -->
+    <footer class="section_footer d-none d-lg-block">
+        <div class="container">
+
+            <div class="row gy-5">
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="section_footer_title">Company</h6>
+                    <ul class="section_footer_list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Corporate Orders</a></li>
+                    <li><a href="#">Refer a Friend</a></li>
+                    <li><a href="#">Our Guarantee</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="section_footer_title">Support</h6>
+                    <ul class="section_footer_list">
+                    <li><a href="#">Help + FAQs</a></li>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="section_footer_title">Plant Questions?</h6>
+                    <ul class="section_footer_list">
+                    <li><a href="#">Plant Care Tips</a></li>
+                    <li><a href="#">Plant Life Blog</a></li>
+                    <li><a href="#">Vera Plant Care App</a></li>
+                    <li><a href="#">Meet Plant Mom</a></li>
+                    <li><a href="#">Contact the Grow-How™ Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="section_footer_title">Stay in the loop</h6>
+                    <p class="section_footer_text">
+                    Stay in the loop with special offers, plant-parenting tips, and more.
+                    </p>
+
+                    <form class="section_footer_newsletter">
+                        <input type="email" placeholder="Email address..." />
+                        <button type="submit">
+                            <i class="bi bi-envelope"></i>
+                        </button>
+                    </form>
+
+                    <div class="section_footer_socials">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_footer_payments_row">
+                <div class="section_footer_payments">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Mastercard-Logo.png" alt="">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.DnZW9tBY671BGCZibjgQYwHaDt?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.xL03XjjZ7shCuc0VYH4jOwHaCR?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.6XRt2G4v3atlErphw3Yf8wAAAA?o=7&cb=defcachec2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                    <img src="https://pngimg.com/uploads/paypal/paypal_PNG7.png" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.w2gCfWiQgQnSLhW5CccXTgHaCh?o=7&cb=defcachec2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                </div>
+            </div>
+
+            <div class="section_footer_bottom">
+                <p>© 2024 Flacio Store</p>
+
+                <div class="section_footer_links">
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Copyright & Trademark</a>
+                    <a href="#">Policy</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- section name_footer_mobile -->
+    <footer class="section_footer_mobile d-block d-lg-none">
+        <div class="container">
+
+            <div class="accordion" id="footerAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#footerCompany">
+                            COMPANY
+                        </button>
+                    </h2>
+                    <div id="footerCompany" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                            <li>About</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>Corporate Orders</li>
+                            <li>Refer a Friend</li>
+                            <li>Our Guarantee</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#footerSupport">
+                            SUPPORT
+                        </button>
+                    </h2>
+                    <div id="footerSupport" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                            <li>Help + FAQs</li>
+                            <li>Track Your Order</li>
+                            <li>Shipping</li>
+                            <li>Returns</li>
+                            <li>Contact Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#footerPlant">
+                            PLANT QUESTIONS?
+                        </button>
+                    </h2>
+                    <div id="footerPlant" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                            <li>Plant Care Tips</li>
+                            <li>Plant Life Blog</li>
+                            <li>Vera Plant Care App</li>
+                            <li>Meet Plant Mom</li>
+                            <li>Contact the Grow-How™ Team</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#footerNewsletter">
+                            STAY IN THE LOOP
+                        </button>
+                    </h2>
+                    <div id="footerNewsletter" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Stay in the loop with special offers, plant-parenting tips, and more.</p>
+
+                            <div class="mobile-footer-newsletter">
+                            <input type="email" placeholder="Email address..." />
+                            <i class="bi bi-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mobile-footer-socials">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+            </div>
+
+            <div class="mobile-footer-payments">
+                <img src="https://logos-world.net/wp-content/uploads/2020/09/Mastercard-Logo.png" alt="">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.DnZW9tBY671BGCZibjgQYwHaDt?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.xL03XjjZ7shCuc0VYH4jOwHaCR?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                <img src="https://th.bing.com/th/id/OIP.6XRt2G4v3atlErphw3Yf8wAAAA?o=7&cb=defcachec2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                <img src="https://pngimg.com/uploads/paypal/paypal_PNG7.png" alt="">
+                <img src="https://th.bing.com/th/id/OIP.w2gCfWiQgQnSLhW5CccXTgHaCh?o=7&cb=defcachec2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+            </div>
+
+            <div class="mobile-footer-bottom">
+                <div>
+                    <p>© 2024 Flacio Store</p>
+                </div>
+                <div>
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Copyright & Trademark</a>
+                    <a href="#">Policy</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- section name_mobile_bottom_nav -->
+    <div class="section_mobile_bottom_nav">
+        <div class="container-fluid">
+            <div class="row text-center">
+
+            <div class="col">
+                <a href="#" class="section_mobile_bottom_nav_item">
+                <i class="bi bi-house"></i>
+                <span>Home</span>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="section_mobile_bottom_nav_item">
+                <i class="bi bi-grid"></i>
+                <span>Shop</span>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="section_mobile_bottom_nav_item">
+                <i class="bi bi-person"></i>
+                <span>Account</span>
+                </a>
+            </div>
+
+            <div class="col position-relative">
+                <a href="#" class="section_mobile_bottom_nav_item">
+                <i class="bi bi-heart"></i>
+                <span>Wishlist</span>
+                <span class="section_mobile_bottom_nav_badge">1</span>
+                </a>
+            </div>
+
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
