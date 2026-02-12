@@ -1521,42 +1521,22 @@
 }
 
 /* ===== Aside responsive behavior ===== */
+@media (max-width: 1200px) {
 
-/* Desktop: show aside */
-.section_products-listing__sidebar {
-  display: block;
-}
-
-@media (max-width: 1199px) {
-
-  /* hide left aside */
-  .section_products-listing__sidebar {
-    display: none;
-  }
+  /* .products-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } */
 
   .filter-toggle {
+    display: flex;
     border: 1px solid #e5e5e5;
     background: #fff;
     width: 42px;
     height: 42px;
-    display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-  }
-
-  .filter-toggle i {
-    font-size: 18px;
-  }
-
-}
-
-/* When aside is hidden, make products full width */
-@media (max-width: 1199px) {
-
-  .section_products-listing__products {
-    width: 100% !important;
-    max-width: 100% !important;
   }
 
 }
@@ -1592,6 +1572,15 @@
   }
 }
 
+.section_top_rating_products_view {
+  display: block;
+}
+
+@media (min-width: 1201px) {
+  .section_top_rating_products_view {
+    display: none;
+  }
+}
 
 /* ================================== section name_footer ================================== */
 .section_footer {
